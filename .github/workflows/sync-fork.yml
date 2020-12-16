@@ -23,8 +23,8 @@ jobs:
       uses: aormsby/Fork-Sync-With-Upstream-action@v2.1
       with:
         upstream_repository: gautampachnanda-fork/dockerise-quay-io
-        upstream_branch: master
-        target_branch: master
+        upstream_branch: main
+        target_branch: main
 
     - name: Timestamp
       run: date
