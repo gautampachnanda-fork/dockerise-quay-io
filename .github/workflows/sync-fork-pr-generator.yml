@@ -1,9 +1,9 @@
-name: Sync Fork
-
 on:
   schedule:
-    - cron: '*/5 * * * *' # every 5 minutes
-  workflow_dispatch: # on button click
+    - cron:  '0 7 * * 1,4'
+    # scheduled at 07:00 every Monday and Thursday
+  workflow_dispatch:
+
 jobs:
   sync_with_upstream:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v2.1
       with:
-        upstream_repository: gautampachnandahmo/dockerise-quay-io
+        upstream_repository: gautampachnanda-fork/dockerise-quay-io
         upstream_branch: master
         target_branch: master
 
