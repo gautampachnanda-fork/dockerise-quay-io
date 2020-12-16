@@ -22,7 +22,7 @@ jobs:
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v2.1
       with:
-        upstream_repository: gautampachnanda-fork/dockerise-quay-io
+        upstream_repository: gautampachnandahmo/dockerise-quay-io
         upstream_branch: main
         target_branch: main
 
