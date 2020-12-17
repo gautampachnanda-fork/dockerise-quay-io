@@ -30,7 +30,7 @@ jobs:
         upstream_branch: main
         target_branch: main
         config_git_credentials: true  
-        #git_pull_args: --squash  --rebase                  # optional arg use, defaults to simple 'pull'
+        git_pull_args: --squash  --rebase                  # optional arg use, defaults to simple 'pull'
         #github_token: ${{ secrets.GPA_FORK_MERGE }}   # optional, for accessing repos that require authentication
         git_user: gautampachnandahmo
         git_email: gautam.pachnanda@digital.homeoffice.gov.uk    
